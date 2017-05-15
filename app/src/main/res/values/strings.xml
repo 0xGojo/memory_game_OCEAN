@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+    <string name="textview">TextView</string>
+    <string name="diem">Diem:</string>
+    <string name="button">Button</string>
+
+</resources>

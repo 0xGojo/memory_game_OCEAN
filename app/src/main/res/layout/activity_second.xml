@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back_animals">
+
+    <RelativeLayout
+    android:id="@+id/medium"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/textView3"
+     android:layout_marginTop="20dp"   >
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        layout="@layout/layout_images"
+        android:layout_marginTop="57dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/easy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            layout="@layout/easy_layout"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/hard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            layout="@layout/hard_layout"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="@string/diem"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        tools:ignore="RtlHardcoded"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pause_game"
+        android:id="@+id/pause"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/timer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/pause" />
+
+
+</RelativeLayout>
